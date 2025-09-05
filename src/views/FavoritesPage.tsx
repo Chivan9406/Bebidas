@@ -1,6 +1,7 @@
-import { useAppStore } from '../stores/useAppStore.ts'
-import DrinkCard from '../components/DrinkCard.tsx'
 import { useMemo } from 'react'
+
+import DrinkCard from '../components/DrinkCard.tsx'
+import { useAppStore } from '../stores/useAppStore.ts'
 
 function FavoritesPage() {
   const favorites = useAppStore(state => state.favorites)

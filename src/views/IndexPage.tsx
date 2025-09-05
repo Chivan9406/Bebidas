@@ -1,7 +1,7 @@
 import { useMemo } from 'react'
 
-import { useAppStore } from '../stores/useAppStore.ts'
 import DrinkCard from '../components/DrinkCard.tsx'
+import { useAppStore } from '../stores/useAppStore.ts'
 
 function IndexPage() {
   const drinks = useAppStore(state => state.drinks)

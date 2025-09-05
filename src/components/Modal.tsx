@@ -1,8 +1,8 @@
 import type { JSX } from 'react'
 import { Dialog, DialogBackdrop, DialogPanel, DialogTitle } from '@headlessui/react'
 
-import { useAppStore } from '../stores/useAppStore.ts'
 import type { Recipe } from '../types'
+import { useAppStore } from '../stores/useAppStore.ts'
 
 export default function Modal() {
   const modal = useAppStore(state => state.modal)

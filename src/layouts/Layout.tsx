@@ -1,6 +1,6 @@
 import { Outlet } from 'react-router'
-import { useEffect } from 'react'
 import { ToastContainer } from 'react-toastify'
+import { useEffect } from 'react'
 
 import Header from '../components/Header.tsx'
 import Modal from '../components/Modal.tsx'

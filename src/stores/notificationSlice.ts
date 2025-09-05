@@ -1,7 +1,7 @@
 import type { StateCreator } from 'zustand'
+import { toast } from 'react-toastify'
 
 import type { FavoritesSliceType } from './favoritesSlice.ts'
-import { toast } from 'react-toastify'
 
 type Notification = {
   text: string
