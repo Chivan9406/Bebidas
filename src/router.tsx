@@ -5,6 +5,7 @@ import { lazy, Suspense } from 'react'
 
 const IndexPage = lazy(() => import('./views/IndexPage.tsx'))
 const FavoritesPage = lazy(() => import('./views/FavoritesPage.tsx'))
+const GenerateAI = lazy(() => import('./components/GenerateAI.tsx'))
 
 function AppRouter() {
   return (
@@ -22,6 +23,13 @@ function AppRouter() {
                  element={
                    <Suspense fallback='Cargando...'>
                      <FavoritesPage />
+                   </Suspense>
+                 }
+          />
+          <Route path='/generate'
+                 element={
+                   <Suspense fallback='Cargando...'>
+                     <GenerateAI />
                    </Suspense>
                  }
           />
